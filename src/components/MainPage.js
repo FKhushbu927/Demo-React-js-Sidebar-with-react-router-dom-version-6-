@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Navbar from './Navbar';
 import NavPage from './NavPage';
 import { NavLink } from 'react-router-dom';
-import { AiOutlineArrowLeft } from "react-icons/ai";
+// import { AiOutlineArrowLeft } from "react-icons/ai";
+import { BiCaretLeft } from "react-icons/bi";
 import { BiCategoryAlt } from "react-icons/bi";
 import { SidebarData } from './../Data/SideBarData';
 
@@ -17,7 +18,7 @@ const MainPage = () => {
         <div className='col-span-3  h-screen  md:col-span-2'>
           <aside className={`text-white bg-purple-700 h-screen relative  m-0  ${open ? "w-72" : "w-20"}`}>
             <div className=''>
-              <AiOutlineArrowLeft className={`bg-white text-purple-200 font-semibold text-3xl absolute -right-6 top-8 border-6 border-dark-purple cursor-pointer ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}></AiOutlineArrowLeft>
+              <BiCaretLeft className={`text-purple-200 font-semibold text-3xl absolute -right-3 top-8 border-6 border-dark-purple cursor-pointer ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}></BiCaretLeft>
 
 {/* //flex align-items-center justify-around */}
               <div className='inline-flex'>

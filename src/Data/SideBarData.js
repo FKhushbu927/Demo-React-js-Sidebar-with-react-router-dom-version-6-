@@ -1,5 +1,15 @@
 import * as FaIcons from "react-icons/fa";
 
+
+import { HiWrenchScrewdriver } from "react-icons/hi2";
+import { HiInformationCircle } from "react-icons/hi2";
+import { HiMiniSquaresPlus } from "react-icons/hi2";
+import { HiMiniShoppingBag  } from "react-icons/hi2";
+import { GrAmazon } from "react-icons/gr";
+import    {GrBarChart}  from "react-icons/gr";
+import { BiCartAlt } from "react-icons/bi";
+
+
 export const SidebarData=[
     // {
     //     title: "Accountantly",
@@ -9,32 +19,32 @@ export const SidebarData=[
       {
         title: "Dashboard",
         path: "/dashboard",
-        icon: <FaIcons.FaGit />,
+        icon: < HiMiniSquaresPlus />,
       },
       {
         title: "Product and Services",
         path: "/products",
-        icon: <FaIcons.FaCss3Alt />,
+        icon: <HiMiniShoppingBag />,
       },
       {
         title: "Purchase",
         path: "/purchase",
-        icon: <FaIcons.FaCss3Alt />,
+        icon: <GrAmazon/>,
       },
       {
         title: "Sales",
         path: "/sales",
-        icon: <FaIcons.FaPhp />,
+        icon: <BiCartAlt />,
       },
       {
         title: "Report",
         path: "/report",
-        icon: <FaIcons.FaJava />,
+        icon: <HiInformationCircle />,
       },
       {
         title: "Setting",
         path: "/setting",
-        icon: <FaIcons.FaJava />,
+        icon: <HiWrenchScrewdriver />,
       },
      
 ]

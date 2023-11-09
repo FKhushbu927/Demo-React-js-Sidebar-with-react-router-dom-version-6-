@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
+import MainPage from './components/MainPage';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <MainPage></MainPage>
+      </BrowserRouter>
+
+    </React.Fragment>
   );
 }
 
